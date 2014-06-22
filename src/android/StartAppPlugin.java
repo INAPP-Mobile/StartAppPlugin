@@ -47,21 +47,21 @@ public class StartAppPlugin extends CordovaPlugin {
 					Log.d(TAG, "appId=" + appId);
 				}
 
-				cordova.getActivity().runOnUiThread(new Runnable() {
-					public void run() {
+//				cordova.getActivity().runOnUiThread(new Runnable() {
+//					public void run() {
 						StartAppAd.init(cordova.getActivity(), devId, appId);
 						startAppAd = new StartAppAd(cordova.getActivity());
 						callbackContext.success();
-					}
-				});
+//					}
+//				});
 				return true;
 			} else if (ACTION_SHOW.equals(action)) {
-				cordova.getActivity().runOnUiThread(new Runnable() {
-					public void run() {
+//				cordova.getActivity().runOnUiThread(new Runnable() {
+//					public void run() {
 						startAppAd.onBackPressed();
 						callbackContext.success();
-					}
-				});
+//					}
+//				});
 				return true;
 			}
 			callbackContext.error("Invalid action");
