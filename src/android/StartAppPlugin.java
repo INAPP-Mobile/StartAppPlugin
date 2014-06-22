@@ -51,9 +51,9 @@ public class StartAppPlugin extends CordovaPlugin {
 					public void run() {
 						StartAppAd.init(cordova.getActivity(), devId, appId);
 						startAppAd = new StartAppAd(cordova.getActivity());
+						callbackContext.success();
 					}
 				});
-				callbackContext.success();
 				return true;
 			} else if (ACTION_SHOW.equals(action)) {
 				cordova.getActivity().runOnUiThread(new Runnable() {
