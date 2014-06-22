@@ -49,7 +49,7 @@ public class StartAppPlugin extends CordovaPlugin {
 
 				cordova.getActivity().runOnUiThread(new Runnable() {
 					public void run() {
-						StartAppSDK.init(cordova.getActivity(), devId, appId);
+						StartAppAd.init(cordova.getActivity(), devId, appId);
 						startAppAd = new StartAppAd(cordova.getActivity());
 					}
 				});
