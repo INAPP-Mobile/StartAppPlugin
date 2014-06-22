@@ -24,7 +24,7 @@ StartAppPlugin.prototype.init = function(successCallback, errorCallback, devId, 
 
     cordova.exec(successCallback, // success callback function
     errorCallback, // error callback function
-    'StartAppPlugin', // mapped to our native Java class called "MobilecorePlugin"
+    'StartAppPlugin',
     'init', // with this action name
     [
     // and this array of custom arguments to create our entry
