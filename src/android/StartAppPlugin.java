@@ -26,7 +26,6 @@ public class StartAppPlugin extends CordovaPlugin {
 	public static final String ACTION_INIT = "init";
 	public static final String ACTION_SHOW = "show";
 
-	private CallbackContext mCallbackCtx;
 	private StartAppAd startAppAd;
 
 	@Override
@@ -63,7 +62,8 @@ public class StartAppPlugin extends CordovaPlugin {
 //					}
 //				});
 				return true;
-			}
+			} 
+
 			callbackContext.error("Invalid action");
 			return false;
 		} catch (Exception e) {
