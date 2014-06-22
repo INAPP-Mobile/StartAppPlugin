@@ -31,7 +31,7 @@ public class StartAppPlugin extends CordovaPlugin {
 
 	@Override
 	public boolean execute(String action, JSONArray args,
-			CallbackContext callbackContext) throws JSONException {
+			final CallbackContext callbackContext) throws JSONException {
 		if (DEBUG) {
 			Log.d(TAG, "execute | action=" + action);
 		}
