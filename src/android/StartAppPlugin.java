@@ -51,7 +51,7 @@ public class StartAppPlugin extends CordovaPlugin {
 //					public void run() {
 						StartAppAd.init(cordova.getActivity(), devId, appId);
 						startAppAd = new StartAppAd(cordova.getActivity());
-						callbackContext.success();
+						callbackContext.success("REACH init");
 //					}
 //				});
 				return true;
@@ -59,7 +59,7 @@ public class StartAppPlugin extends CordovaPlugin {
 //				cordova.getActivity().runOnUiThread(new Runnable() {
 //					public void run() {
 						startAppAd.onBackPressed();
-						callbackContext.success();
+						callbackContext.success("REACH show");
 //					}
 //				});
 				return true;
