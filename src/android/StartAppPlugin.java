@@ -28,11 +28,6 @@ public class StartAppPlugin extends CordovaPlugin {
 
 	private CallbackContext mCallbackCtx;
 	private StartAppAd startAppAd;
-	
-	@Override
-	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
-		super.initialize(cordova, webView);
-	}
 
 	@Override
 	public boolean execute(String action, JSONArray args,
