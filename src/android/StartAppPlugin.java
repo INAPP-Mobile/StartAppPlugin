@@ -31,7 +31,7 @@ public class StartAppPlugin extends CordovaPlugin {
 	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 		super.initialize(cordova, webView);
 	}
-    	
+
 	@Override
 	public boolean execute(String action, JSONArray args,
 			CallbackContext callbackContext) throws JSONException {
@@ -78,14 +78,14 @@ public class StartAppPlugin extends CordovaPlugin {
 	}
 
 	@Override
-	public void onResume() {
-		super.onResume();
+	public void onResume(boolean keepRunning) {
+		super.onResume(keepRunning);
 		startAppAd.onResume();
 	}
 	
 	@Override
-	public void onPause() {
-		super.onPause();
+	public void onPause(boolean keepRunning) {
+		super.onPause(keepRunning);
 		startAppAd.onPause();
 	}
 	
