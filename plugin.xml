@@ -33,11 +33,12 @@ version="1.0.0">
 		<!-- Needs cordova/urlutil -->
 	</engines>
 
+	<js-module src="www/startappplugin.js" name="startappplugin">
+		<clobbers target="window.plugins.StartAppPlugin" />
+	</js-module>
+
 	<!-- android -->
 	<platform name="android">
-		<js-module src="www/startappplugin.js" name="startappplugin">
-			<clobbers target="window.plugins.StartAppPlugin" />
-		</js-module>
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="StartAppPlugin">
 				<param name="android-package" value="com.startapp.cordova.StartAppPlugin"/>
