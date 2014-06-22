@@ -56,11 +56,10 @@ public class StartAppPlugin extends CordovaPlugin {
 				callbackContext.success();
 				return true;
 			} else if (ACTION_SHOW.equals(action)) {
-				this.mCallbackCtx = callbackContext;
 				cordova.getActivity().runOnUiThread(new Runnable() {
 					public void run() {
 						startAppAd.onBackPressed();
-						this.mCallbackCtx.success();
+						callbackContext.success();
 					}
 				});
 				return true;
