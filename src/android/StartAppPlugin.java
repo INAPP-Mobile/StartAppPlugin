@@ -16,6 +16,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.text.TextUtils;
 import android.util.Log;
+import com.startapp.android.publish.StartAppAd;
+
 
 public class StartAppPlugin extends CordovaPlugin {
 	public static final String TAG = "StartAppCordova";
